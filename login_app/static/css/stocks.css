@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    margin-left: 50px;
+    width: 1080px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header a{
+    margin: 10px;
+}
+
+h1 {
+    padding-bottom: 5px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+#bigname_table{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#bigname_table input{
+    border-radius: 10px;
+}
+
+#home_table{
+    display: flex;
+    justify-content: center;
+}
+
+#home_table td{
+    padding: 5px 40px 5px 7px;
+}
+
+table {
+    margin: 10px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+tr {
+    padding: 5px 7px 5px 7px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+td {
+    padding: 5px 7px 5px 7px;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+button {
+    margin-left: 30px;
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgba(119, 119, 252, 0.822);
+    color: whitesmoke;
+}
+
+#balance_info{
+    margin-top: 40px;
+}
+
+.user_table{
+    margin-top: 40px;
+}
+
+button a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#buy_sell input {
+    border-radius: 10px;
+    width: 50px;
+}
+
+

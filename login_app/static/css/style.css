@@ -1,0 +1,34 @@
+*{
+    margin: auto;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    width: 970px;
+    border-color: black;
+    border-width: 8px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 50px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 15px;
+    border-style: none;
+    background-color: black;
+    color: whitesmoke;
+}
+h1 {
+    padding-bottom: 5px;
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+input {
+    border-radius: 10px;
+    display: flex;
+}
