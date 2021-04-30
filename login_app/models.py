@@ -22,15 +22,25 @@ class UserManager(models.Manager):
         
         if len(postData['password']) < 8:
             errors['password_length'] = 'Password length must be at least 8 characters'
-            
+
         return errors
+
+    # def edit_validator(self, postData):
+    #     errors = {}
+    #     if postData['password'] != password:
+    #         errors['password'] = 'Password incorrect'
+    
+    #     if len(postData['password']) < 8:
+    #         errors['password_length'] = 'Password length must be at least 8 characters'
+            
+    #     return errors
 
 
 class User(models.Model):
-    first_name= models.CharField(max_length=50)
-    last_name= models.CharField(max_length=60)
-    email= models.EmailField(max_length=50)
-    password= models.CharField(max_length=60)
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=60)
+    email = models.EmailField(max_length=50)
+    password = models.CharField(max_length=60)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     objects = UserManager()

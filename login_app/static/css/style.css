@@ -2,14 +2,19 @@
     margin: auto;
 }
 
+body{
+    background-color: black;
+}
+
 #container{
     display: flex;
     justify-content: center;
     width: 970px;
-    border-color: black;
-    border-width: 8px;
+    background-color: darkgray;
+    border-color: darkred;
+    border-width: 3px;
     border-style: solid;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 50px;
     margin-top: 15px;
 }
@@ -22,6 +27,7 @@ button {
     color: whitesmoke;
 }
 h1 {
+    color: darkred;
     padding-bottom: 5px;
     border-bottom-color: black;
     border-bottom-style: solid;

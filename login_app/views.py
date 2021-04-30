@@ -31,11 +31,10 @@ def user_login(request):
         user = User.objects.get(email = request.POST['email'])
     except:
         messages.error(request, 'This email does not exist')
-        redirect('/login')
-    
+        return redirect('/login')
     if not bcrypt.checkpw(request.POST['password'].encode(),user.password.encode()):
         messages.error(request, 'Password Incorrect')
-        return redirect('/')
+        return redirect('/login')
     request.session['user_id'] = user.id
     request.session['user_email'] = user.email
     return redirect('/')

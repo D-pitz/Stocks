@@ -57,10 +57,22 @@
             </table>
         </div>
         <div id="buy_sell">
-            <p>Quantity: <input type="text">  <button><a href="stock_page">Buy</a></button></p>
-            <p>Quantity: <input type="text">  <button><a href="stock_page">Sell</a></button></p>
-            <button>Follow</button>
+            <p>Purchase Shares: 
+            <form action="buy_page" method="post">
+            {% csrf_token %}
+                <input type="text" name="shares">
+                <button>Buy</button>
+            </form>
+            </p>
+            <p>Sell Shares: 
+            <form action="sell_page" method="post">
+            {% csrf_token %}
+                <input type="text" name="shares">
+                <button>Sell</button>
+            </form>
+            </p>
         </div>
+        <button>Follow</button>
     </div>
 </body>
 </html>
